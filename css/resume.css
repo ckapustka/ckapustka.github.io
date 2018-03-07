@@ -139,8 +139,11 @@ section.resume-section .resume-item .resume-date {
 
 .text-primary {
   color: #8F0011 !important;
-  font-size:  1.1rem !important;
-  font-weight: bold !important;
+}
+
+.text-date {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 a {
