@@ -29,6 +29,10 @@ h1 {
   line-height: 5.5rem;
 }
 
+.inline-header h1 {
+  display: inline-block;
+}
+
 h2 {
   font-size: 3.5rem;
 }
@@ -42,6 +46,7 @@ h2 {
 
 .list-social-icons a {
   color: #8F0011;
+  display: inline;
 }
 
 .list-social-icons a:hover {
