@@ -29,7 +29,7 @@ h1 {
   line-height: 5.5rem;
 }
 
-.inline-header h1 {
+.inline-header {
   display: inline-block;
 }
 
