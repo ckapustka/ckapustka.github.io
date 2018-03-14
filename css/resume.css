@@ -30,7 +30,7 @@ h1 {
 }
 
 .inline-header {
-  display: inline;
+  float: left;
 }
 
 h2 {
