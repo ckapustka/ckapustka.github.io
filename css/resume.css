@@ -29,13 +29,6 @@ h1 {
   line-height: 5.5rem;
 }
 
-.inline-header {
-  float: left;
-  display: block;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
 h2 {
   font-size: 3.5rem;
 }
@@ -45,7 +38,6 @@ h2 {
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
-  float: left;
 }
 
 .list-social-icons a {
@@ -61,8 +53,9 @@ h2 {
 }
 
 .list-social-icons a .fa-header-icon {
+  float: right;
+  margin-right: 20px;
   font-size: 2.25rem;
-  padding-left: 20px;
   vertical-align: middle;
 }
 
