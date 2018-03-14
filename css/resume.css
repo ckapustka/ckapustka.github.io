@@ -44,6 +44,7 @@ h2 {
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
+  float: left;
 }
 
 .list-social-icons a {
