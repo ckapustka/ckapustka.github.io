@@ -30,7 +30,7 @@ h1 {
 }
 
 .inline-header {
-  float: left;
+  display: inline;
 }
 
 h2 {
@@ -46,7 +46,6 @@ h2 {
 
 .list-social-icons a {
   color: #8F0011;
-  display: inline;
 }
 
 .list-social-icons a:hover {
@@ -59,7 +58,8 @@ h2 {
 
 .list-social-icons a .fa-header-icon {
   font-size: 2.25rem;
-} 
+  padding-left: 20px;
+}
 
 .list-icons {
   font-size: 3rem;
