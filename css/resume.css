@@ -37,11 +37,11 @@ h2 {
   border-radius: 10px;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-color: #495057;
+  background-color: #8F0011;
   color: white;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin-left: 20px;
+  float: right;
 }
 
 .subheading {
