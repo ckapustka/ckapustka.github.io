@@ -47,6 +47,14 @@ h2 {
   margin-left: 20px;
 }
 
+@media (min-width: 992px) {
+  .download-button {
+    position: relative;
+    left: 0px;
+    margin-left: 0px;
+  }
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
