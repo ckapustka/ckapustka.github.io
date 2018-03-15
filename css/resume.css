@@ -12,12 +12,13 @@ body {
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 5.5rem;
   }
   .mobile-text {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -34,12 +35,16 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 5.5rem;
 }
 
 h2 {
   font-size: 3.5rem;
+}
+
+.mobile-text {
+  font-size: 1.2rem;
 }
 
 .download-button {
@@ -60,7 +65,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem;
+  /*font-size: 1.35rem;*/
 }
 
 .list-social-icons a {
