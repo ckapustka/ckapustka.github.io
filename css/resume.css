@@ -12,6 +12,15 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .mobile-text {
+    font-size: 1.2rem;
+  }
+}
+
 h1,
 h2,
 h3,
