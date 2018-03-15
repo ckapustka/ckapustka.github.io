@@ -42,16 +42,16 @@ h2 {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   position: relative;
-  left: 50px;
+  left: 0px;
   vertical-align: top;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 @media (min-width: 992px) {
   .download-button {
     position: relative;
-    left: 0px;
-    margin-left: 0px;
+    left: 50px;
+    margin-left: 20px;
   }
 }
 
