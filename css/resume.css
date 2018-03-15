@@ -45,6 +45,10 @@ h2 {
   margin-left: 20px;
 }
 
+.interest-pic {
+  display: none;
+}
+
 .mobile-text {
   text-transform: uppercase;
   font-weight: 500;
@@ -62,6 +66,11 @@ h2 {
     left: 50px;
     margin-left: 20px;
   }
+
+  .interest-pic {
+    display: inline;
+  }
+
   .mobile-text {
     font-size: 1.55rem;
   }
