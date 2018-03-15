@@ -33,6 +33,17 @@ h2 {
   font-size: 3.5rem;
 }
 
+.download-button {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #495057;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
