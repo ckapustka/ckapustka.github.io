@@ -48,7 +48,7 @@ h2 {
 }
 
 .mobile-text {
-  font-size: 1.25rem !important;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
