@@ -41,13 +41,13 @@ h2 {
   color: white;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  /*position: relative;
-  left: 100px;*/
   vertical-align: top;
-  /*margin-left: 0px;*/
 }
 
 .mobile-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
   font-size: 1.25rem;
 }
 
