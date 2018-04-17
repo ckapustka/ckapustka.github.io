@@ -9,6 +9,7 @@ import javax.swing.JApplet;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
+import javax.swing.SwingUtilities;
 import puzzle.PuzzleCanvas;
 import puzzle.PuzzleProblem;
 import puzzle.PuzzleState;
@@ -23,7 +24,7 @@ import waterjug.WaterJugState;
  */
 public class TestFrame extends JApplet {
     
-    public TestFrame() {
+    private void initTestFrame() {
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.add("Bridge", new JScrollPane(new GUI(new BridgeProblem(), new BridgeCanvas(new BridgeState(Position.WEST,
                                                                                 Position.WEST,
@@ -40,8 +41,23 @@ public class TestFrame extends JApplet {
         frame.setVisible(true);
     }
     
-    public static void main(String[] args) {
-        new TestFrame();
-    }
+    @Override
+    public void init() {
+        try {
+         // Use invokeAndWait() so that init() does not exit before GUI constructed
+         SwingUtilities.invokeAndWait(new Runnable() {
+            @Override
+            public void run() {
+               initTestFrame();
+            }
+         });
+      } catch (Exception e) {
+         e.printStackTrace();
+      }
+   }
+    
+//    public static void main(String[] args) {
+//        new TestFrame();
+//    }
     
 }
