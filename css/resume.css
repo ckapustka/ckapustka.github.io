@@ -37,12 +37,16 @@ h2 {
   border-radius: 10px;
   font-size: 1.25rem;
   text-transform: uppercase;
-  background-color: #8F0011;
+  background-color: #9e0013;
   color: white;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   vertical-align: top;
   margin-left: 20px;
+}
+
+.download-button:hover {
+	background-color: #495057;
 }
 
 .interest-pic {
@@ -83,10 +87,11 @@ h2 {
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
+  color: #aaa;
 }
 
 .list-social-icons a {
-  color: #8F0011;
+  color: #9e0013;
 }
 
 .list-social-icons a:hover {
@@ -109,7 +114,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #8F0011;
+  color: #9e0013;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -186,11 +191,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #8F0011 !important;
+  background-color: #9e0013 !important;
 }
 
 .text-primary {
-  color: #8F0011 !important;
+  color: #9e0013 !important;
+}
+
+.text-secondary {
+  color: #aaa !important;
 }
 
 .text-date {
@@ -199,10 +208,10 @@ section.resume-section .resume-item .resume-date {
 }
 
 a {
-  color: #8F0011;
+  color: #9e0013;
 }
 
 a:hover, a:focus, a:active {
-  color: #495057;
+  color: #aaa;
   text-decoration: none;
 }
