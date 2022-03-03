@@ -1,8 +1,88 @@
+/* Variables */
+:root {
+	--white:    #ddd;
+	--gray-100: #fefefe;
+	--gray-200: #e9ecef;
+	--gray-300: #dee2e6;
+	--gray-400: #ced4da;
+	--gray-500: #adb5bd;
+	--gray-600: #868e96;
+	--gray-700: #495057;
+	--gray-800: #343a40;
+	--gray-900: #212529;
+	--black:    #000;
+
+	--blue:    #4da2ff;
+	--indigo:  #6610f2;
+	--purple:  #6f42c1;
+	--pink:    #e83e8c;
+	--red:     #dc3545;
+	--orange:  #BD5D38;
+	--yellow:  #ffc107;
+	--green:   #28a745;
+	--teal:    #20c997;
+	--cyan:    #17a2b8;
+	--maroon:  #9e0013;
+
+	--primary:       var(--blue);
+	--secondary:     var(--gray-600);
+	--success:       var(--green);
+	--info:          var(--cyan);
+	--warning:       var(--yellow);
+	--danger:        var(--red);
+	--light:         var(--gray-100);
+	--dark:          var(--gray-800);
+	--background:	 var(--light);
+	--text:			 var(--dark);
+	--highlight:	 var(--gray-500);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+		--white:    #333;
+		--gray-100: #f8f9fa;
+		--gray-200: #e9ecef;
+		--gray-300: #dee2e6;
+		--gray-400: #ced4da;
+		--gray-500: #adb5bd;
+		--gray-600: #868e96;
+		--gray-700: #495057;
+		--gray-800: #343a40;
+		--gray-900: #212529;
+		--black:    #000;
+
+		--blue:    #4da2ff;
+		--indigo:  #6610f2;
+		--purple:  #6f42c1;
+		--pink:    #e83e8c;
+		--red:     #dc3545;
+		--orange:  #BD5D38;
+		--yellow:  #ffc107;
+		--green:   #28a745;
+		--teal:    #20c997;
+		--cyan:    #17a2b8;
+		--maroon:  #9e0013;
+
+		--primary:       var(--maroon);
+		--secondary:     var(--gray-600);
+		--success:       var(--green);
+		--info:          var(--cyan);
+		--warning:       var(--yellow);
+		--danger:        var(--red);
+		--light:         var(--gray-100);
+		--dark:          var(--gray-800);
+		--background:	 var(--dark);
+		--text:			 var(--light);
+		--highlight:	 var(--gray-500);
+	}
+}
+
+
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: white;
-  background-color: #343a40
+  color: var(--text);
+  background-color: var(--background);
 }
 
 @media (min-width: 992px) {
@@ -21,7 +101,7 @@ h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  color: var(--text);
 }
 
 h1 {
@@ -37,7 +117,7 @@ h2 {
   border-radius: 10px;
   font-size: 1.25rem;
   text-transform: uppercase;
-  background-color: #9e0013;
+  background-color: var(--primary);
   color: white;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -46,7 +126,7 @@ h2 {
 }
 
 .download-button:hover {
-	background-color: #495057;
+	background-color: var(--gray-400);
 }
 
 .interest-pic {
@@ -71,6 +151,10 @@ h2 {
     left: 50px;
     margin-left: 20px;
   }
+  
+  .download-button:hover {
+    background: var(--gray-700);
+  }
 
   .interest-pic {
     display: inline;
@@ -87,15 +171,15 @@ h2 {
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
-  color: #aaa;
+  color: var(--gray-600);
 }
 
 .list-social-icons a {
-  color: #9e0013;
+  color: var(--primary);
 }
 
 .list-social-icons a:hover {
-  color: #495057;
+  color: var(--gray-700);
 }
 
 .list-social-icons a .fa-lg {
@@ -114,7 +198,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #9e0013;
+  color: var(--primary);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -132,6 +216,7 @@ h2 {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+	box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -141,7 +226,8 @@ h2 {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid #343a40;
+    /* border: 0.5rem solid #343a40; */
+	box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -191,15 +277,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #9e0013 !important;
+  background-color: var(--primary) !important;
 }
 
 .text-primary {
-  color: #9e0013 !important;
+  color: var(--primary) !important;
 }
 
 .text-secondary {
-  color: #aaa !important;
+  color: var(--gray-600) !important;
 }
 
 .text-date {
@@ -208,10 +294,10 @@ section.resume-section .resume-item .resume-date {
 }
 
 a {
-  color: #9e0013;
+  color: var(--primary);
 }
 
 a:hover, a:focus, a:active {
-  color: #aaa;
+  color: var(--highlight);
   text-decoration: none;
 }
