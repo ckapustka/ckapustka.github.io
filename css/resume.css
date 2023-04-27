@@ -24,7 +24,7 @@
 	--cyan:    #17a2b8;
 	--maroon:  #9e0013;
 
-	--primary:       var(--blue);
+	--primary:       #5d8a9b;
 	--secondary:     var(--gray-600);
 	--success:       var(--green);
 	--info:          var(--cyan);
