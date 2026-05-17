@@ -61,7 +61,8 @@
 		--green:   #28a745;
 		--teal:    #20c997;
 		--cyan:    #17a2b8;
-		--maroon:  #9e0013;
+		/*--maroon:  #9e0013;*/
+        --maroon:  #b50016;
 
 		--primary:       var(--maroon);
 		--secondary:     var(--gray-600);
@@ -204,6 +205,12 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.resume-item {
+    border-top: 1px solid #666;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem !important;
 }
 
 @media (min-width: 992px) {
